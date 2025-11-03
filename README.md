@@ -1,1 +1,1 @@
-This is the research archive for Junsong Cang
+This is the public research archive for Junsong Cang, repo contains my research codes for each publication, you can use these codes to reproduce results in my paper. Folders are named according to DOI or arXiv code. Some data files might not be included if they are too large but they are available upon request to cangjunsong@outlook.com or cangjunsong@icloud.com
