@@ -1,3 +1,5 @@
+# 本来要做Inference的，但是1GeV附近总是有无法消除的bump。以下记录了一些之前做过的测试，最后还是用Fisher了。Inference的数据和代码都不用保留了，记录一下问题就行了
+
 HM issue
 
 1. 砍掉 m > 2 GeV
