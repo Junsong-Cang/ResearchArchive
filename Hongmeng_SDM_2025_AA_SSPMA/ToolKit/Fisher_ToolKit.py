@@ -178,6 +178,7 @@ def Get_HM_Data(
         0.0, # adding other FG terms
         0.0,
         0.0,
+        0.0,
         0.0
         ]
     Tsky_stats = T_sky(
@@ -250,13 +251,6 @@ def compute_derivative(
         names.append(name)
     
     # FG
-    '''
-    params_fid.append(HM_data['FG_params'][0])
-    names.append("FG_0")
-    for idx in np.arange(1, NFG):
-        params_fid.append(0.0)
-        names.append("FG_{:.0f}".format(idx))
-    '''
     for idx in np.arange(0, NFG):
         params_fid.append(HM_data['FG_params'][idx])
         names.append("FG_{:.0f}".format(idx))
