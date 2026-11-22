@@ -6,9 +6,10 @@
     Here Ref2 is a review partially based on Ref1
 
 # Pipeline
-0. Install 21cmFirstCLASS
-    url: https://github.com/Junsong-Cang/21cmFirstCLASS.git
-    Any commits around 2025/11 should be fine. I made some changes to the code to fix installation issues but I changed nothing related to physical implementations.
+0. Install 21cmFirstCLASS and get my PyLab repo
+    21cmFirstCLASS url: https://github.com/Junsong-Cang/21cmFirstCLASS.git
+    PyLab url: https://github.com/Junsong-Cang/PyLab.git
+    For both repos (especially 21cmFirstCLASS), any commits around 2025/11 should be fine. I made some changes to the code to fix installation issues but I changed nothing related to physical implementations.
 1. Build Fisher DataSet
     1.1 - First run Run_Fisher_DataSet.py with MPI and reload=1
     1.2 - Run it again but with reload=0 and no MPI
