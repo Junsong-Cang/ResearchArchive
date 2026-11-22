@@ -39,9 +39,8 @@ Timestep precision notes
 '''
 
 def Load_Fisher_DataSet():
-    data_file = '/Users/cangtao/FileVault/GitHub/ResearchArchive_Private/HM_SDM25/data/Fisher.h5'
-    #data_file = '/Users/cangtao/FileVault/GitHub/ResearchArchive_Private/HM_SDM25/data/Fisher_LargeBox.h5'
-    #print("Using Large box")
+    data_file = '/Users/cangtao/FileVault/GitHub/ResearchArchive/Hongmeng_SDM_2025_AA_SSPMA/data/Fisher.h5'
+    #data_file = '/Users/cangtao/FileVault/GitHub/ResearchArchive/Hongmeng_SDM_2025_AA_SSPMA/data/Fisher_LargeBox.h5';print("Using Large box")
     with h5py.File(data_file, 'r') as h5:
         z = h5['z'][:]
         params_fid = h5['params_fiducial'][:]
