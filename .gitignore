@@ -1,2 +1,5 @@
 DM_21cm_2025_PRD/v3/data/*
 Hongmeng_SDM_2025_AA_SSPMA/ToolKit/__pycache__
+Hongmeng_SDM_2025_AA_SSPMA/tmp*
+*/tmp*
+*/*/tmp*
