@@ -8,7 +8,7 @@ import PyLab as PL
 import numpy as np
 import sys, time
 from mpi4py import MPI
-sys.path.insert(1, '/Users/cangtao/FileVault/GitHub/ResearchArchive_Private/HM_SDM25/ToolKit/')
+sys.path.insert(1, '/Users/cangtao/FileVault/GitHub/ResearchArchive/Hongmeng_SDM_2025_AA_SSPMA/ToolKit/')
 import DataSetTools as DST
 
 # sx_ax is the one-sigma error in sx at different masses
@@ -20,7 +20,7 @@ def Run(idx):
     mass = mx_ax[idx]
     params_astro = np.array([-1.25, -1.35, 40.5, 0.5, -2.5,  -1.35, 40.5, 0.0, -0.3, 0.5, 2.0])
     #                         fst  fesc    LX   ast  fst3   fesc3  LX3  ast3  aesc  E0   ALW  mx    sx
-    datafile = "/Users/cangtao/Desktop/SDM_HM_cache/LC_{:.2f}_{:.2f}.h5".format(sigma, mass)
+    datafile = "/Volumes/X320/备份/SDM_HM_2512.05056/SDM_HM_Linear_cache/LC_{:.2f}_{:.2f}.h5".format(sigma, mass)
     fst, fesc, LX, ast, fst3, fesc3, LX3, ast3, aesc, E0_KeV, ALW = params_astro
     E0_eV = E0_KeV*1000.0
     DST.Run_21cmFirstCLASS_MINI(

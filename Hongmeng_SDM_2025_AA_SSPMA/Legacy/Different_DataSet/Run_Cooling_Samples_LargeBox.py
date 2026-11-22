@@ -1,7 +1,7 @@
 import numpy as np
 
 zmax = 50
-summary_file = '/Users/cangtao/FileVault/Projects/SDM_lite/data/cooling_rate_LargeBox.h5'
+summary_file = '/Users/cangtao/FileVault/GitHub/ResearchArchive/Hongmeng_SDM_2025_AA_SSPMA/data/cooling_rate_LargeBox.h5'
 reload = 1
 mx_ax = np.linspace(-4, 3, 40)
 sx_ax = np.linspace(-46, -39, 40)
@@ -10,7 +10,7 @@ import PyLab as PL
 import sys, platform, os, time, h5py
 from mpi4py import MPI
 if platform.system() == 'Darwin':
-    sys.path.insert(1, '/Users/cangtao/FileVault/Projects/SDM_lite/ToolKit/')
+    sys.path.insert(1, '/Users/cangtao/FileVault/GitHub/ResearchArchive/Hongmeng_SDM_2025_AA_SSPMA/ToolKit/')
 else:
     sys.path.insert(1, '/afs/ihep.ac.cn/users/z/zhangzixuan/work/cjs/SDM_lite/ToolKit/')
 from DataSetTools import Run_21cmFirstCLASS_MINI

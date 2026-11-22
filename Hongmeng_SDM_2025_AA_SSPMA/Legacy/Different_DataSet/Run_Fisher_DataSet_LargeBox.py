@@ -24,10 +24,10 @@ import numpy as np
 import sys, platform, os, time, h5py, tqdm
 from mpi4py import MPI
 if platform.system() == 'Darwin':
-    sys.path.insert(1, '/Users/cangtao/FileVault/GitHub/ResearchArchive_Private/HM_SDM25/ToolKit/')
+    sys.path.insert(1, '/Users/cangtao/FileVault/GitHub/ResearchArchive/Hongmeng_SDM_2025_AA_SSPMA/ToolKit/')
     settings = setting_mac
-    data_path = '/Users/cangtao/Desktop/HM_Fisher_DataSet_LargeBox/'
-    data_file = '/Users/cangtao/FileVault/GitHub/ResearchArchive_Private/HM_SDM25/data/Fisher_LargeBox.h5'
+    data_path = '/Volumes/X320/备份/SDM_HM_2512.05056/HM_Fisher_DataSet_LargeBox/'
+    data_file = '/Users/cangtao/FileVault/GitHub/ResearchArchive/Hongmeng_SDM_2025_AA_SSPMA/data/Fisher_LargeBox.h5'
 else:
     sys.path.insert(1, '/afs/ihep.ac.cn/users/z/zhangzixuan/work/cjs/SDM_lite/ToolKit/')
     settings = setting_HPC

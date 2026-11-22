@@ -1,5 +1,13 @@
-# ---- Codes for HM-SDM forecast 2512.05056 ----
+# ---- Codes for Hongmeng-SDM forecast ----
+
+# Papers:
+    Ref1: J. Cang, Y. Gao and Y-Z. Ma, Sensitivity of the Hongmeng 21cm experiment to scattering dark matter, Astron.Astrophys. 714 (2026), A40 [arXiv: 2512.05056]
+    Ref2: B. Li, et al., Investigating the nature of dark matter and early-universe black hole formation based on the Hongmeng measurement of the global 21-cm spectrum, SCIENTIA SINICA Physica, Mechanica & Astronomica (2026)
+
 # Pipeline
+0. Install 21cmFirstCLASS
+    url: https://github.com/Junsong-Cang/21cmFirstCLASS.git
+    Any commits around 2025/11 should be fine.
 1. Build Fisher DataSet
     1.1 - First run Run_Fisher_DataSet.py with MPI and reload=1
     1.2 - Run it again but with reload=0 and no MPI
@@ -8,7 +16,9 @@
     2.1 - Run Run_Cooling_Samples.py with MPI & reload
     2.2 Run it again without MPI & reload
     2.3 scp cooling_rate.h5 to mac
-3. Final Step: main.ipynb runs everything needed by the paper
+3. Final Steps: 
+    main_AA.ipynb runs everything needed by the AA paper
+    main_SSPMA.ipynb runs everything needed by the SSPMA paper
 
 # Optional deappreciated pipeline - Park18 interpolation table
 4. Build interpolation dataset
